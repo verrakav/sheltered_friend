@@ -1,0 +1,16 @@
+{
+  "name": "sheltered_friend",
+  "version": "1.0.0",
+  "description": "A webpage for an animal shelter showcasing sass",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss/style.scss:css/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.77.8"
+  }
+}
