@@ -1,6 +1,96 @@
-h1 {
-  color: red;
+/*border, padding are not added to the element 
+  here we make the elm inherit whatever is put on body*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+body {
   font-family: "SUSE", sans-serif;
+  font-weight: 400;
+  line-height: 2;
+  padding: 2rem;
+  margin: 1rem;
+}
+
+.heading-primary {
+  color: #9a381d;
+  text-transform: uppercase;
+  padding-top: 15rem;
+  padding-right: 5rem;
+}
+.heading-primary--main {
+  display: block;
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 2rem;
+  padding-top: 5rem;
+  text-align: right;
+}
+.heading-primary--sub {
+  display: block;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.25rem;
+  text-align: right;
+  padding-right: inherit;
+}
+
+header {
+  height: 95vh;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(to right bottom, rgba(244, 241, 222, 0.8), rgba(242, 204, 143, 0.8)), url("../../img/shelter.jpg");
+  position: relative;
+}
+header-container {
+  background-color: #f4f1de;
+  padding: 10rem 0;
+}
+
+.header__logo-box {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+}
+
+.header__logo {
+  height: 8rem;
+  width: auto;
+}
+
+.btn:link, .btn:visited {
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  position: relative;
+  font-size: 1.6rem;
+}
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 0.5rem 2rem rgba(255, 255, 255, 0.2);
+}
+.btn:active {
+  transform: translateY(-0.1rem);
+}
+.btn--friends {
+  background-color: #9a381d;
+  color: #f4f1de;
+  margin-top: 2rem;
+  margin-right: 10%;
+  float: right;
 }
 
 /*# sourceMappingURL=style.css.map */

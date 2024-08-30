@@ -1,0 +1,16 @@
+/*border, padding are not added to the element 
+  here we make the elm inherit whatever is put on body*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  // resetting the font size to 10px
+  font-size: 62.5%;
+}
+body {
+  box-sizing: border-box;
+}

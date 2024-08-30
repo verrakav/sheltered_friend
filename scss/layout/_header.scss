@@ -1,0 +1,29 @@
+header {
+  height: 95vh;
+  //   fixing the background img
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($colour-egg, 0.8),
+      rgba($colour-vanilla, 0.8)
+    ),
+    url("../../img/shelter.jpg");
+  position: relative;
+
+  &-container {
+    background-color: $colour-egg;
+    padding: 10rem 0;
+  }
+}
+
+.header__logo-box {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+}
+.header__logo {
+  height: 8rem;
+  width: auto;
+  //find a way to dye the logo
+}

@@ -1,0 +1,29 @@
+.btn {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    // shaping the btn
+    border-radius: 10rem;
+    position: relative;
+    font-size: 1.6rem;
+  }
+
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 0.5rem 2rem rgba($color-white, 0.2);
+  }
+
+  &:active {
+    transform: translateY(-0.1rem);
+  }
+
+  &--friends {
+    background-color: $colour-brick-dark;
+    color: $colour-egg;
+    margin-top: 2rem;
+    margin-right: 10%;
+    float: right;
+  }
+}

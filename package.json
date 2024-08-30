@@ -4,7 +4,7 @@
   "description": "A webpage for an animal shelter showcasing sass",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch scss/style.scss:css/style.css",
+    "sass": "sass --watch scss/main.scss:css/style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
