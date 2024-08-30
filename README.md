@@ -1,6 +1,3 @@
-# sheltered_friend
-
-
 # Sheltered Friend
 
 ## A webpage for an animal shelter 🐣
