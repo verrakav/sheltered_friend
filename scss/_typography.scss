@@ -43,6 +43,19 @@ body {
   text-shadow: 0.5rem 0.5rem 5rem $colour-brown;
 }
 
+.heading-tertiary {
+  color: $colour-brick-dark;
+  text-transform: uppercase;
+  padding-left: 6.5rem;
+  padding-bottom: 1.5rem;
+  display: block;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 1.5rem;
+  text-align: left;
+  text-shadow: 0.5rem 0.5rem 5rem $colour-brown;
+}
+
 .about-us__text {
   font-size: 3rem;
   font-style: italic;

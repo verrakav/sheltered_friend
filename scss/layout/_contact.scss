@@ -1,0 +1,39 @@
+.contact-us {
+  height: 95vh;
+
+  .map-container {
+    width: 50rem;
+    height: 50rem;
+  }
+
+  .list-contact {
+    list-style: none;
+    color: $colour-brick-dark;
+    font-size: 1.75rem;
+    font-weight: 300;
+    width: 100%;
+    margin-top: 6rem;
+
+    &--item {
+      transition: all 0.2s;
+      position: relative;
+
+      //creating the streaky underline
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0; /* Initially, the underline is hidden */
+        height: 0.1rem; /* Thickness of the underline */
+        background-color: $colour-brick-dark;
+        transition: width 0.3s ease-in-out; /* Smooth transition for the underline */
+      }
+
+      //controls the length of the line
+      &:hover:after {
+        width: 50%;
+      }
+    }
+  }
+}
