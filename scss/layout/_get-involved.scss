@@ -1,0 +1,91 @@
+.get-involved {
+  height: 95vh;
+}
+
+//selects all wrappers for the info boxes to give common properties
+[class*="wrapper"] {
+  border-radius: 3rem;
+  padding: 3rem;
+  height: 25rem;
+  border-radius: 1.5rem;
+  transition: all 0.2s;
+}
+
+.card__action {
+  &-1 {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($colour-mint-medium, 0.7),
+      rgba($colour-mint-dark, 0.7)
+    );
+    &:hover {
+      transform: translateY(-3rem);
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($colour-mint-medium, 0.7),
+        rgba($colour-mint-dark, 1)
+      );
+    }
+  }
+  &-2 {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($colour-prune-light, 0.8),
+      rgba($colour-prune-dark, 0.8)
+    );
+    &:hover {
+      transform: translateY(-3rem);
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($colour-prune-dark, 0.7),
+        rgba($colour-prune-intense, 0.9)
+      );
+    }
+  }
+  &-3 {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($colour-brick-light, 0.8),
+      rgba($colour-brick-dark, 0.8)
+    );
+    &:hover {
+      transform: translateY(-3rem);
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($colour-brick-light, 1),
+        rgba($colour-brick-dark, 1)
+      );
+    }
+  }
+
+  &-heading {
+    color: $colour-vanilla;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0.5rem 0.5rem 3rem $colour-brown;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 0.5rem;
+  }
+
+  &--details {
+    color: $colour-vanilla;
+    font-size: 1.5rem;
+    letter-spacing: 0.25;
+    font-weight: 300;
+    text-shadow: 0.2rem 0.2rem 8rem $colour-brown;
+  }
+}
+
+.list {
+  list-style: circle;
+  font-size: 1.25rem;
+  color: $colour-vanilla;
+  text-shadow: 0.2rem 0.2rem 8rem $colour-brown;
+  padding-left: 1.5rem;
+}
+
+a {
+  text-decoration: underline;
+  color: $colour-vanilla;
+}

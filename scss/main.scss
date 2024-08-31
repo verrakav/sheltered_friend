@@ -2,10 +2,9 @@
 @import "./base";
 @import "./typography";
 @import "./mixins";
-
+@import "./utilities";
 @import "./layout/header";
 @import "./layout/grid";
-@import "./layout/friends";
-
+@import "./layout/about-friends";
+@import "./layout/get-involved";
 @import "./components/button";
-@import "./components/card";

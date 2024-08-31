@@ -2,7 +2,9 @@
   &:link,
   &:visited {
     text-decoration: none;
-    padding: 1.5rem 4rem;
+    letter-spacing: 0.4rem;
+    color: $colour-vanilla;
+    padding: 0.75rem 3rem;
     display: inline-block;
     // shaping the btn
     border-radius: 10rem;
@@ -12,7 +14,7 @@
 
   &:hover {
     transform: translateY(-0.3rem);
-    box-shadow: 0 0.5rem 2rem rgba($color-white, 0.2);
+    box-shadow: 0 0.5rem 2rem rgba($colour-white, 0.2);
   }
 
   &:active {
@@ -25,5 +27,12 @@
     margin-top: 2rem;
     margin-right: 10%;
     float: right;
+    &:hover {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($colour-brick-light, 1),
+        rgba($colour-brick-dark, 1)
+      );
+    }
   }
 }

@@ -1,3 +1,6 @@
+.about-us {
+  padding: 40rem 45rem;
+}
 .card__friends {
   height: auto;
   border-radius: 1.5rem;
@@ -9,6 +12,15 @@
   );
   padding: 1rem;
   box-sizing: border-box;
+  transition: all 0.2s;
+  &:hover {
+    transform: translateY(-2rem);
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($colour-brick-light, 1),
+      rgba($colour-brick-dark, 1)
+    );
+  }
 
   //img element
   .picture {

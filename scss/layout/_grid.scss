@@ -16,3 +16,14 @@
     margin-right: 0;
   }
 }
+
+.col-1-of-3 {
+  float: left;
+  width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+  margin-right: $gutter-horizontal;
+  margin-bottom: $gutter-vertical;
+  //without it the 3d column went next row
+  &:nth-child(3) {
+    margin-right: 0;
+  }
+}
