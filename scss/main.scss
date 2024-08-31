@@ -1,6 +1,11 @@
 @import "./variables";
 @import "./base";
 @import "./typography";
+@import "./mixins";
+
 @import "./layout/header";
+@import "./layout/grid";
+@import "./layout/friends";
+
 @import "./components/button";
 @import "./components/card";

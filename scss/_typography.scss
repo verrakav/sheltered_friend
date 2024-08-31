@@ -30,3 +30,18 @@ body {
     padding-right: inherit;
   }
 }
+
+.heading-secondary {
+  color: $colour-brick-dark;
+  text-transform: uppercase;
+  padding: 5rem;
+  display: block;
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: 2rem;
+  text-align: center;
+}
+
+// h3 {
+//   text-align: center;
+// }

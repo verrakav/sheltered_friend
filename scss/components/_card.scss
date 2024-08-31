@@ -1,0 +1,32 @@
+.card__friends {
+  height: auto;
+  border-radius: 1.5rem;
+  color: $colour-vanilla;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($colour-brick-light, 0.8),
+    rgba($colour-brick-dark, 0.8)
+  );
+  padding: 1rem;
+  box-sizing: border-box;
+
+  //img element
+  .picture {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 0.75rem;
+  }
+  //why this works and not &__name?
+  .card__name {
+    text-align: center;
+    font-weight: 300;
+    font-size: 2.5rem;
+
+    &--details {
+      font-size: 1.5rem;
+      padding: 0.5rem;
+      text-align: center;
+    }
+  }
+}
