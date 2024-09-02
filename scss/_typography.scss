@@ -3,8 +3,11 @@ body {
   font-weight: 400;
   //   color: $colour-brown;
   line-height: 2;
-  padding: 2rem;
-  margin: 1rem;
+  //without this the footer has space around it
+  &:not(:last-child) {
+    padding: 2rem;
+    margin: 1rem;
+  }
 }
 
 .heading-primary {
