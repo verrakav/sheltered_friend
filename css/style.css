@@ -27,6 +27,10 @@ body:not(:last-child) {
   margin: 1rem;
 }
 
+.shelter-info {
+  margin: 4rem;
+}
+
 .heading-primary {
   color: #9a381d;
   text-transform: uppercase;
@@ -284,17 +288,17 @@ a {
 footer.footer {
   background-color: #9a381d;
   color: #f4f1de;
-  height: 9rem;
+  height: 4rem;
   text-align: right;
   font-weight: 300;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   color: #f4f1de;
 }
 
 .footer-text {
   display: inline-block;
-  padding-top: 2rem;
   padding-right: 2rem;
+  padding-top: 0.5rem;
 }
 
 .btn:link, .btn:visited {
