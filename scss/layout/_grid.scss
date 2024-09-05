@@ -3,6 +3,9 @@
   margin: 0 auto;
   //makes sure the row will expantd to contain the floated columns
   @include clearfix;
+  @include responsive(phone) {
+    margin-top: -4rem;
+  }
 }
 
 .col-1-of-4 {
@@ -24,6 +27,11 @@
     &:nth-child(2n) {
       margin-right: 0;
     }
+  }
+
+  @include responsive(phone) {
+    width: 100%;
+    margin: 3rem 4.5rem;
   }
 }
 
@@ -53,5 +61,8 @@
   //MEDIA
   @include responsive(tab-land) {
     width: calc((100% - #{$gutter-horizontal}) / 2);
+  }
+  @include responsive(phone) {
+    width: 100%;
   }
 }

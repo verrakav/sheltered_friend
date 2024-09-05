@@ -19,6 +19,9 @@
     width: 50%;
     margin: 0 auto;
   }
+  @include responsive(phone) {
+    width: 100%;
+  }
 }
 
 .card__action {

@@ -1,3 +1,15 @@
+/*
+0-600px : Phone
+600-900px : Tablet portrait
+900-1200px : Tablet landscape
+
+[1200-1800] is the normal style (what we started with)
+
+breakpoint arguments:
+- phone
+- tab-port
+- tab-land
+*/
 /*border, padding are not added to the element 
   here we make the elm inherit whatever is put on body*/
 *,
@@ -17,18 +29,6 @@ body {
   background-color: #f4f1de;
 }
 
-/*
-0-600px : Phone
-600-900px : Tablet portrait
-900-1200px : Tablet landscape
-
-[1200-1800] is the normal style (what we started with)
-
-breakpoint arguments:
-- phone
-- tab-port
-- tab-land
-*/
 body {
   font-family: "SUSE", sans-serif;
   font-weight: 400;
@@ -41,6 +41,12 @@ body:not(:last-child) {
 
 .shelter-info {
   margin: 4rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .shelter-info {
+    margin: 1rem;
+    height: 80vh;
+  }
 }
 
 .heading-primary {
@@ -62,6 +68,15 @@ body:not(:last-child) {
     letter-spacing: 1rem;
   }
 }
+@media only screen and (max-width: 37.5em) {
+  .heading-primary--main {
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+    line-height: 5rem;
+    text-align: center;
+    padding-left: 5rem;
+  }
+}
 .heading-primary--sub {
   display: block;
   font-size: 2rem;
@@ -73,6 +88,15 @@ body:not(:last-child) {
 @media only screen and (max-width: 56.25em) {
   .heading-primary--sub {
     padding-right: 0;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .heading-primary--sub {
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    padding-left: 5rem;
+    padding-top: 5rem;
   }
 }
 
@@ -95,6 +119,16 @@ body:not(:last-child) {
 @media only screen and (max-width: 56.25em) {
   .heading-secondary {
     letter-spacing: 1rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .heading-secondary {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    padding-left: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -123,6 +157,13 @@ body:not(:last-child) {
     padding-top: 1.5rem;
   }
 }
+@media only screen and (max-width: 37.5em) {
+  .heading-tertiary {
+    text-align: center;
+    padding-right: 5.5rem;
+    padding-top: 3rem;
+  }
+}
 
 .about-us__text {
   font-size: 3rem;
@@ -132,6 +173,12 @@ body:not(:last-child) {
   letter-spacing: 0.3rem;
   color: #9a381d;
   text-shadow: 0.5rem 0.5rem #f2cc8f;
+}
+@media only screen and (max-width: 37.5em) {
+  .about-us__text {
+    padding: 5rem 2rem;
+    font-size: 2rem;
+  }
 }
 
 .u-margin-top-big {
@@ -153,14 +200,12 @@ header-container {
   background-color: #f4f1de;
   padding: 10rem 0;
 }
-
-.header__logo-box {
+header .header__logo-box {
   position: absolute;
   top: 4rem;
   left: 4rem;
 }
-
-.header__logo {
+header .header__logo {
   height: 8rem;
   width: auto;
 }
@@ -173,6 +218,11 @@ header-container {
   content: "";
   display: table;
   clear: both;
+}
+@media only screen and (max-width: 37.5em) {
+  .row {
+    margin-top: -4rem;
+  }
 }
 
 .col-1-of-4 {
@@ -191,6 +241,12 @@ header-container {
   }
   .col-1-of-4:nth-child(2n) {
     margin-right: 0;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .col-1-of-4 {
+    width: 100%;
+    margin: 3rem 4.5rem;
   }
 }
 
@@ -219,6 +275,11 @@ header-container {
     width: calc((100% - 6rem) / 2);
   }
 }
+@media only screen and (max-width: 37.5em) {
+  .col-3-of-4 {
+    width: 100%;
+  }
+}
 
 .about-us {
   padding: 40rem 45rem;
@@ -233,6 +294,11 @@ header-container {
     padding: 15rem;
   }
 }
+@media only screen and (max-width: 37.5em) {
+  .about-us {
+    padding: 5rem;
+  }
+}
 
 .card__friends {
   height: auto;
@@ -242,6 +308,12 @@ header-container {
   padding: 1rem;
   box-sizing: border-box;
   transition: all 0.2s;
+}
+@media only screen and (max-width: 37.5em) {
+  .card__friends {
+    height: 55rem;
+    width: 25rem;
+  }
 }
 .card__friends:hover {
   transform: translateY(-2rem);
@@ -268,6 +340,13 @@ header-container {
     line-height: 2rem;
   }
 }
+@media only screen and (max-width: 37.5em) {
+  .card__friends .card__name--details {
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 0 auto;
+  }
+}
 
 .get-involved {
   height: 95vh;
@@ -289,6 +368,11 @@ header-container {
   [class*=wrapper] {
     width: 50%;
     margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  [class*=wrapper] {
+    width: 100%;
   }
 }
 
@@ -366,6 +450,11 @@ a {
     height: fit-content;
   }
 }
+@media only screen and (max-width: 37.5em) {
+  .contact-us {
+    margin-top: 30rem;
+  }
+}
 .contact-us .map-container {
   width: 50rem;
   height: 50rem;
@@ -378,6 +467,12 @@ a {
 @media only screen and (max-width: 75em) {
   .contact-us .info {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .contact-us .info {
+    padding-right: 14rem;
+    margin: 7rem -1rem;
   }
 }
 .contact-us .list-contact {
@@ -399,6 +494,14 @@ a {
     width: 100%;
     margin-left: 2.5rem;
     text-align: center;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .contact-us .list-contact {
+    width: 100%;
+    margin-left: 3.5rem;
+    text-align: center;
+    margin-top: 2rem;
   }
 }
 .contact-us .list-contact--item {
@@ -458,6 +561,13 @@ footer.footer {
   margin-top: 2rem;
   margin-right: 10%;
   float: right;
+}
+@media only screen and (max-width: 37.5em) {
+  .btn--friends {
+    float: none;
+    margin-left: 12rem;
+    margin-top: 5rem;
+  }
 }
 .btn--friends:hover {
   background-image: linear-gradient(to right bottom, #e07a5f, #9a381d);

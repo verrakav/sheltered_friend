@@ -5,6 +5,9 @@
     margin-top: 25rem;
     height: fit-content;
   }
+  @include responsive(phone) {
+    margin-top: 30rem;
+  }
   .map-container {
     width: 50rem;
     height: 50rem;
@@ -17,6 +20,10 @@
     //MEDIA
     @include responsive(tab-land) {
       width: 100%;
+    }
+    @include responsive(phone) {
+      padding-right: 14rem;
+      margin: 7rem -1rem;
     }
   }
   .list-contact {
@@ -36,6 +43,12 @@
       width: 100%;
       margin-left: 2.5rem;
       text-align: center;
+    }
+    @include responsive(phone) {
+      width: 100%;
+      margin-left: 3.5rem;
+      text-align: center;
+      margin-top: 2rem;
     }
     &--item {
       transition: all 0.2s;

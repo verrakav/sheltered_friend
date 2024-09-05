@@ -27,6 +27,12 @@
     margin-top: 2rem;
     margin-right: 10%;
     float: right;
+    //MEDIA
+    @include responsive(phone) {
+      float: none;
+      margin-left: 12rem;
+      margin-top: 5rem;
+    }
     &:hover {
       background-image: linear-gradient(
         to right bottom,

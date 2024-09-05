@@ -8,6 +8,9 @@
   @include responsive(tab-port) {
     padding: 15rem;
   }
+  @include responsive(phone) {
+    padding: 5rem;
+  }
 }
 
 .card__friends {
@@ -22,6 +25,12 @@
   padding: 1rem;
   box-sizing: border-box;
   transition: all 0.2s;
+
+  //MEDIA
+  @include responsive(phone) {
+    height: 55rem;
+    width: 25rem;
+  }
 
   &:hover {
     transform: translateY(-2rem);
@@ -52,6 +61,11 @@
       //MEDIA
       @include responsive(tab-port) {
         line-height: 2rem;
+      }
+      @include responsive(phone) {
+        font-size: 2rem;
+        font-weight: 200;
+        margin: 0 auto;
       }
     }
   }

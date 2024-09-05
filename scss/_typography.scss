@@ -12,6 +12,11 @@ body {
 
 .shelter-info {
   margin: 4rem;
+  //MEDIA
+  @include responsive(phone) {
+    margin: 1rem;
+    height: 80vh;
+  }
 }
 
 .heading-primary {
@@ -31,6 +36,13 @@ body {
     @include responsive(tab-port) {
       letter-spacing: 1rem;
     }
+    @include responsive(phone) {
+      font-size: 4rem;
+      letter-spacing: 0.5rem;
+      line-height: 5rem;
+      text-align: center;
+      padding-left: 5rem;
+    }
   }
   &--sub {
     display: block;
@@ -42,6 +54,13 @@ body {
     //MEDIA
     @include responsive(tab-port) {
       padding-right: 0;
+    }
+    @include responsive(phone) {
+      font-size: 2rem;
+      letter-spacing: 0.1rem;
+      text-align: center;
+      padding-left: 5rem;
+      padding-top: 5rem;
     }
   }
 }
@@ -62,6 +81,14 @@ body {
   }
   @include responsive(tab-port) {
     letter-spacing: 1rem;
+  }
+  @include responsive(phone) {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    padding-left: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -86,6 +113,11 @@ body {
     text-align: center;
     padding-top: 1.5rem;
   }
+  @include responsive(phone) {
+    text-align: center;
+    padding-right: 5.5rem;
+    padding-top: 3rem;
+  }
 }
 
 .about-us__text {
@@ -96,4 +128,9 @@ body {
   letter-spacing: 0.3rem;
   color: $colour-brick-dark;
   text-shadow: 0.5rem 0.5rem $colour-vanilla;
+  //MEDIA
+  @include responsive(phone) {
+    padding: 5rem 2rem;
+    font-size: 2rem;
+  }
 }

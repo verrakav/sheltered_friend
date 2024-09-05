@@ -15,14 +15,13 @@ header {
     background-color: $colour-egg;
     padding: 10rem 0;
   }
-}
-
-.header__logo-box {
-  position: absolute;
-  top: 4rem;
-  left: 4rem;
-}
-.header__logo {
-  height: 8rem;
-  width: auto;
+  .header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
+  .header__logo {
+    height: 8rem;
+    width: auto;
+  }
 }
