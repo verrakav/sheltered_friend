@@ -17,6 +17,18 @@ body {
   background-color: #f4f1de;
 }
 
+/*
+0-600px : Phone
+600-900px : Tablet portrait
+900-1200px : Tablet landscape
+
+[1200-1800] is the normal style (what we started with)
+
+breakpoint arguments:
+- phone
+- tab-port
+- tab-land
+*/
 body {
   font-family: "SUSE", sans-serif;
   font-weight: 400;
@@ -45,6 +57,11 @@ body:not(:last-child) {
   padding-top: 5rem;
   text-align: right;
 }
+@media only screen and (max-width: 56.25em) {
+  .heading-primary--main {
+    letter-spacing: 1rem;
+  }
+}
 .heading-primary--sub {
   display: block;
   font-size: 2rem;
@@ -52,6 +69,11 @@ body:not(:last-child) {
   letter-spacing: 0.25rem;
   text-align: right;
   padding-right: inherit;
+}
+@media only screen and (max-width: 56.25em) {
+  .heading-primary--sub {
+    padding-right: 0;
+  }
 }
 
 .heading-secondary {
@@ -65,6 +87,16 @@ body:not(:last-child) {
   text-align: center;
   text-shadow: 0.5rem 0.5rem 5rem #80550f;
 }
+@media only screen and (max-width: 75em) {
+  .heading-secondary {
+    padding-bottom: 0;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .heading-secondary {
+    letter-spacing: 1rem;
+  }
+}
 
 .heading-tertiary {
   color: #9a381d;
@@ -77,6 +109,19 @@ body:not(:last-child) {
   letter-spacing: 1.5rem;
   text-align: left;
   text-shadow: 0.5rem 0.5rem 5rem #80550f;
+}
+@media only screen and (max-width: 75em) {
+  .heading-tertiary {
+    letter-spacing: 0.5rem;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .heading-tertiary {
+    letter-spacing: 0.5rem;
+    text-align: center;
+    padding-top: 1.5rem;
+  }
 }
 
 .about-us__text {
@@ -139,6 +184,15 @@ header-container {
 .col-1-of-4:nth-child(4n) {
   margin-right: 0;
 }
+@media only screen and (max-width: 56.25em) {
+  .col-1-of-4 {
+    height: 50rem;
+    width: calc((100% - 6rem) / 2);
+  }
+  .col-1-of-4:nth-child(2n) {
+    margin-right: 0;
+  }
+}
 
 .col-1-of-3 {
   float: left;
@@ -149,14 +203,35 @@ header-container {
 .col-1-of-3:nth-child(3) {
   margin-right: 0;
 }
+@media only screen and (max-width: 56.25em) {
+  .col-1-of-3 {
+    width: 100%;
+    height: 20rem;
+  }
+}
 
 .col-3-of-4 {
   width: calc(3 * (100% - 3 * 6rem) / 4 + 2 * 6rem);
   float: left;
 }
+@media only screen and (max-width: 75em) {
+  .col-3-of-4 {
+    width: calc((100% - 6rem) / 2);
+  }
+}
 
 .about-us {
   padding: 40rem 45rem;
+}
+@media only screen and (max-width: 75em) {
+  .about-us {
+    padding: 25rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .about-us {
+    padding: 15rem;
+  }
 }
 
 .card__friends {
@@ -188,6 +263,11 @@ header-container {
   padding: 0.5rem;
   text-align: center;
 }
+@media only screen and (max-width: 56.25em) {
+  .card__friends .card__name--details {
+    line-height: 2rem;
+  }
+}
 
 .get-involved {
   height: 95vh;
@@ -199,6 +279,17 @@ header-container {
   height: 25rem;
   border-radius: 1.5rem;
   transition: all 0.2s;
+}
+@media only screen and (max-width: 75em) {
+  [class*=wrapper] {
+    height: 30rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  [class*=wrapper] {
+    width: 50%;
+    margin: 0 auto;
+  }
 }
 
 .card__action-1 {
@@ -222,6 +313,11 @@ header-container {
   transform: translateY(-3rem);
   background-image: linear-gradient(to right bottom, #e07a5f, #9a381d);
 }
+@media only screen and (max-width: 75em) {
+  .card__action-3 {
+    margin-bottom: 5rem;
+  }
+}
 .card__action-heading {
   color: #f2cc8f;
   text-align: center;
@@ -237,6 +333,15 @@ header-container {
   letter-spacing: 0.25;
   font-weight: 300;
   text-shadow: 0.2rem 0.2rem 8rem #80550f;
+}
+@media only screen and (max-width: 56.25em) {
+  .card__action--details {
+    width: 100%;
+    margin: 0 auto;
+    line-height: 2rem;
+    padding: 2rem 0;
+    text-align: center;
+  }
 }
 
 .list {
@@ -255,9 +360,25 @@ a {
 .contact-us {
   height: 95vh;
 }
+@media only screen and (max-width: 56.25em) {
+  .contact-us {
+    margin-top: 25rem;
+    height: fit-content;
+  }
+}
 .contact-us .map-container {
   width: 50rem;
   height: 50rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .contact-us .map-container {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 75em) {
+  .contact-us .info {
+    width: 100%;
+  }
 }
 .contact-us .list-contact {
   list-style: none;
@@ -266,6 +387,19 @@ a {
   font-weight: 300;
   width: 100%;
   margin-top: 6rem;
+}
+@media only screen and (max-width: 75em) {
+  .contact-us .list-contact {
+    width: 100%;
+    margin-left: 15rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .contact-us .list-contact {
+    width: 100%;
+    margin-left: 2.5rem;
+    text-align: center;
+  }
 }
 .contact-us .list-contact--item {
   transition: all 0.2s;

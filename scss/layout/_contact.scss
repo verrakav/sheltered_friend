@@ -1,11 +1,24 @@
 .contact-us {
   height: 95vh;
-
+  //MEDIA
+  @include responsive(tab-port) {
+    margin-top: 25rem;
+    height: fit-content;
+  }
   .map-container {
     width: 50rem;
     height: 50rem;
+    //MEDIA
+    @include responsive(tab-port) {
+      width: 100%;
+    }
   }
-
+  .info {
+    //MEDIA
+    @include responsive(tab-land) {
+      width: 100%;
+    }
+  }
   .list-contact {
     list-style: none;
     color: $colour-brick-dark;
@@ -14,6 +27,16 @@
     width: 100%;
     margin-top: 6rem;
 
+    //MEDIA
+    @include responsive(tab-land) {
+      width: 100%;
+      margin-left: 15rem;
+    }
+    @include responsive(tab-port) {
+      width: 100%;
+      margin-left: 2.5rem;
+      text-align: center;
+    }
     &--item {
       transition: all 0.2s;
       position: relative;

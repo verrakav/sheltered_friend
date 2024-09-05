@@ -9,6 +9,16 @@
   height: 25rem;
   border-radius: 1.5rem;
   transition: all 0.2s;
+
+  //MEDIA
+  @include responsive(tab-land) {
+    height: 30rem;
+  }
+
+  @include responsive(tab-port) {
+    width: 50%;
+    margin: 0 auto;
+  }
 }
 
 .card__action {
@@ -56,6 +66,9 @@
         rgba($colour-brick-dark, 1)
       );
     }
+    @include responsive(tab-land) {
+      margin-bottom: 5rem;
+    }
   }
 
   &-heading {
@@ -74,6 +87,13 @@
     letter-spacing: 0.25;
     font-weight: 300;
     text-shadow: 0.2rem 0.2rem 8rem $colour-brown;
+    @include responsive(tab-port) {
+      width: 100%;
+      margin: 0 auto;
+      line-height: 2rem;
+      padding: 2rem 0;
+      text-align: center;
+    }
   }
 }
 
